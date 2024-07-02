@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result" disabled>
+                <div id="history"></div>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="clearScreen()">C</button>
+                <button class="btn" onclick="backspace()">&larr;</button>
+                <button class="btn" onclick="display('(')">(</button>
+                <button class="btn" onclick="display(')')">)</button>
+                <button class="btn" onclick="display('/')">/</button>
+                <button class="btn" onclick="display('*')">*</button>
+                <button class="btn" onclick="display('7')">7</button>
+                <button class="btn" onclick="display('8')">8</button>
+                <button class="btn" onclick="display('9')">9</button>
+                <button class="btn" onclick="display('-')">-</button>
+                <button class="btn" onclick="display('4')">4</button>
+                <button class="btn" onclick="display('5')">5</button>
+                <button class="btn" onclick="display('6')">6</button>
+                <button class="btn" onclick="display('+')">+</button>
+                <button class="btn" onclick="display('1')">1</button>
+                <button class="btn" onclick="display('2')">2</button>
+                <button class="btn" onclick="display('3')">3</button>
+                <button class="btn" onclick="calculate()">=</button>
+                <button class="btn" onclick="display('0')">0</button>
+                <button class="btn" onclick="display('.')">.</button>
+                <button class="btn" onclick="display('Math.sin(')">sin</button>
+                <button class="btn" onclick="display('Math.cos(')">cos</button>
+                <button class="btn" onclick="display('Math.tan(')">tan</button>
+                <button class="btn" onclick="display('Math.sqrt(')">√</button>
+                <button class="btn" onclick="display('Math.pow(')">^</button>
+                <button class="btn" onclick="display('Math.log(')">log</button>
+                <button class="btn" onclick="display('Math.exp(')">exp</button>
+                <button class="btn" onclick="display('Math.PI')">π</button>
+                <button class="btn" onclick="display('Math.E')">e</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
